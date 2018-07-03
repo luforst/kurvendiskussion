@@ -13,6 +13,7 @@ f2 = sym.diff(f, x, 2)
 f3 = sym.diff(f, x, 3)
 
 # Nullstellen
+nullstellen = sym.solveset(f, x)
 
 
 # Extremstellen / -punkte
