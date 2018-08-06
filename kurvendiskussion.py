@@ -22,3 +22,5 @@ extremstellen = {x0 for x0 in extremstellen_mögl if x0 not in sym.solveset(f2, 
 
 
 # Wendestellen / -punkte
+wendestellen_mögl = list(sym.solveset(f2, x)) # mögl. Wendest. anhand notwendiger Bedingung f''(x)=0
+wendestellen = {x0 for x0 in wendestellen_mögl if x0 not in sym.solveset(f3, x)}
