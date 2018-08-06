@@ -18,6 +18,9 @@ nullstellen = sym.solveset(f, x)
 
 # Extremstellen / -punkte
 extremstellen_mögl = sym.solveset(f1, x) # Bestimme mögliche Extremstellen anhand notwendiger Bedingung f'(x)=0
+extremstellen_mögl = list(extremstellen_mögl)
+
+extremstellen = {stelle for stelle in extremstellen_mögl if stelle not in sym.solveset(f2, x)}
 
 
 # Wendestellen / -punkte
